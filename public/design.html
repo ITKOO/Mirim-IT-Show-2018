@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Timeline Scroll</title>
+    <link rel="stylesheet" href="css/common.css"> </head>
+
+<body>
+    <!-- firebase 관련 script -->
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <!-- jquery 관련 script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBN20lxXffksSZKxCk71NdO5jnHhhyy6o8"
+            , authDomain: "mirim-it-show-2018.firebaseapp.com"
+            , databaseURL: "https://mirim-it-show-2018.firebaseio.com"
+            , projectId: "mirim-it-show-2018"
+            , storageBucket: "mirim-it-show-2018.appspot.com"
+            , messagingSenderId: "594894209652"
+        };
+        firebase.initializeApp(config);
+        const dbRefObject = firebase.database().ref().child('IT-Show/Form');
+        const dbRefList = dbRefObject.child('designMajor');
+        dbRefList.on('child_added', snap => {
+            var imgRef = firebase.storage().ref('images/' + snap.val().Content.fileName);
+            imgRef.getDownloadURL().then(function (url) {
+                var appendHTML = '<figure><img src="' + url + '"><figcaption><div><b>' + snap.val().Content.workName + "</b></div><br><div>" + snap.val().Content.tag + "</div><br><div>" + snap.val().Content.des + "</div><br>" + '</figcaption></figure>';
+                $("#category" + snap.val().Content.category_select).append(appendHTML);
+            });
+        });
+    </script>
+    <header>
+        <div class="movecontainer" onclick="location.href ='sw.html'">
+            <div class="moveTo">소프트웨어과</div>
+            <br>
+            <div class="moveTo">작품</div>
+            <br>
+            <div class="moveTo">보러가기</div>
+        </div>
+    </header>
+    <ul class="timeline">
+        <li class="bar"></li>
+    </ul>
+    <div class="container">
+        <section data-name="웹">
+            <h1>공간을 소재로 한 웹</h1>
+            <div id="columns">
+                <div id="category1"> </div>
+            </div>
+        </section>
+        <section data-name="지자체<br>캐릭터">
+            <h1>지자체 캐릭터</h1>
+            <div id="columns">
+                <div id="category2"> </div>
+            </div>
+        </section>
+    </div>
+    <footer style="text-align: center;">
+        <p style="color: rgb(255,255,255,0.5)">&copy;DEVELOPEON</p>
+    </footer>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

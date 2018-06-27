@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Timeline Scroll</title>
+    <link rel="stylesheet" href="css/common.css"> </head>
+
+<body>
+    <!-- firebase 관련 script -->
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <!-- jquery 관련 script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBN20lxXffksSZKxCk71NdO5jnHhhyy6o8"
+            , authDomain: "mirim-it-show-2018.firebaseapp.com"
+            , databaseURL: "https://mirim-it-show-2018.firebaseio.com"
+            , projectId: "mirim-it-show-2018"
+            , storageBucket: "mirim-it-show-2018.appspot.com"
+            , messagingSenderId: "594894209652"
+        };
+        firebase.initializeApp(config);
+        const dbRefObject = firebase.database().ref().child('IT-Show/Form');
+        const dbRefList = dbRefObject.child('softwareMajor');
+        dbRefList.on('child_added', snap => {
+            var imgRef = firebase.storage().ref('images/' + snap.val().Content.fileName);
+            imgRef.getDownloadURL().then(function (url) {
+                var appendHTML = '<figure><img src="' + url + '"><figcaption><div><b>' + snap.val().Content.workName + "</b></div><br><div>" + snap.val().Content.tag + "</div><br><div>" + snap.val().Content.des + "</div><br>" + '</figcaption></figure>';
+                $("#category" + snap.val().Content.category_select).append(appendHTML);
+            });
+        });
+    </script>
+    <header>
+        <div class="movecontainer" onclick="location.href ='design.html'">
+            <div class="moveTo">디자인과</div>
+            <br>
+            <div class="moveTo">작품</div>
+            <br>
+            <div class="moveTo">보러가기</div>
+        </div>
+    </header>
+    <ul class="timeline">
+        <li class="bar"></li>
+    </ul>
+    <div class="container">
+        <section data-name="콩닥콩닥<br>입학준비">
+            <h1>콩닥콩닥 입학준비</h1>
+            <div id="columns">
+                <div id="category1"> </div>
+            </div>
+        </section>
+        <section data-name="두근두근<br>등교준비">
+            <h1>두근두근 등교준비</h1>
+            <div id="columns">
+                <div id="category2"> </div>
+            </div>
+        </section>
+        <section data-name="팔짝팔짝<br>국어체육">
+            <h1>팔짝팔짝 국어체육</h1>
+            <div id="columns">
+                <div id="category3"> </div>
+            </div>
+        </section>
+        <section data-name="왁자지껄<br>쉬는시간">
+            <h1>왁자지껄 쉬는시간</h1>
+            <div id="columns">
+                <div id="category4"> </div>
+            </div>
+        </section>
+        <section data-name="깡충깡충<br>전공교과">
+            <h1>깡충깡충 전공교과</h1>
+            <div id="columns">
+                <div id="category5"> </div>
+            </div>
+        </section>
+        <section data-name="와글와글<br>쉬는시간">
+            <h1>와글와글 쉬는시간</h1>
+            <div id="columns">
+                <div id="category6"> </div>
+            </div>
+        </section>
+        <section data-name="성큼성큼<br>마이스터">
+            <h1>성큼성큼 마이스터</h1>
+            <div id="columns">
+                <div id="category7"> </div>
+            </div>
+        </section>
+        <section data-name="생글생글<br>귀가하기">
+            <div id="columns">
+                <div id="category8"> </div>
+            </div>
+        </section>
+    </div>
+    <footer style="text-align: center;">
+        <p style="color: rgb(255,255,255,0.5)">&copy;DEVELOPEON</p>
+    </footer>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

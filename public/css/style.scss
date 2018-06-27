@@ -1,0 +1,225 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+    overflow-x: hidden;
+    background-color: #ffc200;
+   
+}
+
+
+
+.bold{
+    font-weight: bold;
+}
+
+.space{
+    margin-left: 40px;
+}
+
+
+.highlight{
+    padding:5px;
+    
+    display: inline-block;
+    background-color: #aeaeae;
+}
+
+.index{
+    width: 100%;
+    height: 650px;
+    .index-bg{
+        width: 1024px;
+        height: 650px;
+        margin: 0 auto;
+        background-image: url("../img/top_index_bg.png");
+        background-position: center;
+        background-size: cover;
+
+        .location{
+            margin-left:375px;
+            padding-top:330px;
+            position: absolute;
+            .blinkLetter{
+                color:#1016da;
+                font-weight: bold;
+                
+            }
+        }
+
+        .location-design{
+            margin-left:540px;
+            padding-top:330px;
+            position: absolute;
+            .blinkLetter{
+                color:#1016da;
+                font-weight: bold;
+                
+            }
+        }
+       
+    }
+}
+
+
+.imageSlider{
+    
+    img{
+        margin: 0 auto;
+        width: 100%;
+        height: 700px;
+        opacity: 0.8;
+        object-fit: cover;
+    }
+
+    
+
+    .softExplain{
+        background-color: #000;
+        color:#ffc200;
+        position: absolute;
+        padding-left:20px;
+        padding-right:20px;
+        bottom: 450px;
+        left:15%;
+        line-height: 145%;
+        font-size: 2.2em;
+    }
+
+    .mirimExplain{
+        background-color: #fff;
+        color:#000;
+        position: absolute;
+        bottom: 320px;
+        padding-left:20px;
+        padding-right:20px;
+        left:23%;
+        line-height: 145%;
+        font-size: 1.6em;
+    }
+
+    .space{
+        margin-bottom: 47px;
+        margin-left:-0.2px;
+    }
+
+    .showExplain{
+        background-color: blue;
+        color:#ffc200;
+        position: absolute;
+        bottom: 120px;
+        padding-left:20px;
+        padding-right:20px;
+        left:23%;
+        line-height: 145%;
+        font-size: 2.2em;
+    }
+
+    
+}
+
+
+.works{
+    width: 100%;
+    height: 1200px;
+    font-size: 1.35em;
+    line-height: 145%;
+    .explain{
+        text-indent: 165px;
+        margin-left:15%;
+        margin-top:90px; 
+    }
+
+    .autoSlider{
+        width: 55%;
+        margin-top:50px;
+        display: inline-block;
+
+        .companyExplain{
+            background-color: blue;
+            color:#ffc200;
+            position: absolute;
+            bottom: 80px;
+            padding-left:30px;
+            padding-right:30px;
+            left:5%;
+            
+            line-height: 145%;
+            font-size: 1.6em;
+        }
+        
+        img{
+                width: 100%;
+                height: 400px;
+                opacity: 0.9;
+                object-fit: cover;
+            }
+        
+    }
+
+    .p-explain{
+        display: inline-block;
+        margin-left: 100px;
+        position: absolute;
+        margin-top: 50px;
+    }
+
+    #map{
+        width: 45%;
+        height: 400px;
+        margin-left:10%;
+        display: inline-block;
+        margin-top:30px;
+    }
+
+    .m-explain{
+        display: inline-block;
+        margin-left: 100px;
+        position: absolute;
+        margin-top: 35px;
+    }
+    
+}
+
+.footer{
+    width: 100%;
+    height: 380px;
+    padding-left:50px;
+    background-color: #565656;
+   
+    .f-explain{
+        width: 1024px;   
+        margin:0 auto;
+        color: #fff;
+        line-height: 145%;
+
+        img{
+            padding-top:70px;
+            margin-bottom:50px;  
+            display: inline-block;
+        }
+        .f-logo{
+            margin-right: 10%;
+            a{
+                text-decoration: none;
+                margin-top:60px;
+                position: relative;
+                margin-right:20px;
+                bottom:20px;
+                float: right;
+                img{
+                    width:60px;
+                    height:60px;
+                    object-fit: cover;
+                    &:hover{
+                        opacity: 0.6;
+                    }
+                }
+        }
+      
+    }
+
+         
+       
+    }
+}

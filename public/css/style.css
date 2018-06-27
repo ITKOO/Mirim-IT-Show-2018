@@ -1,0 +1,161 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nanum Gothic', sans-serif;
+  overflow-x: hidden;
+  background-color: #ffc200; }
+
+.bold {
+  font-weight: bold; }
+
+.space {
+  margin-left: 40px; }
+
+.highlight {
+  padding: 5px;
+  display: inline-block;
+  background-color: #aeaeae; }
+
+.index {
+  width: 100%;
+  height: 650px; }
+  .index .index-bg {
+    width: 1024px;
+    height: 650px;
+    margin: 0 auto;
+    background-image: url("../img/top_index_bg.png");
+    background-position: center;
+    background-size: cover; }
+    .index .index-bg .location {
+      margin-left: 375px;
+      padding-top: 330px;
+      position: absolute; }
+      .index .index-bg .location .blinkLetter {
+        color: #1016da;
+        font-weight: bold; }
+    .index .index-bg .location-design {
+      margin-left: 540px;
+      padding-top: 330px;
+      position: absolute; }
+      .index .index-bg .location-design .blinkLetter {
+        color: #1016da;
+        font-weight: bold; }
+
+.imageSlider img {
+  margin: 0 auto;
+  width: 100%;
+  height: 700px;
+  opacity: 0.8;
+  object-fit: cover; }
+
+.imageSlider .softExplain {
+  background-color: #000;
+  color: #ffc200;
+  position: absolute;
+  padding-left: 20px;
+  padding-right: 20px;
+  bottom: 450px;
+  left: 15%;
+  line-height: 145%;
+  font-size: 2.2em; }
+
+.imageSlider .mirimExplain {
+  background-color: #fff;
+  color: #000;
+  position: absolute;
+  bottom: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  left: 23%;
+  line-height: 145%;
+  font-size: 1.6em; }
+
+.imageSlider .space {
+  margin-bottom: 47px;
+  margin-left: -0.2px; }
+
+.imageSlider .showExplain {
+  background-color: blue;
+  color: #ffc200;
+  position: absolute;
+  bottom: 120px;
+  padding-left: 20px;
+  padding-right: 20px;
+  left: 23%;
+  line-height: 145%;
+  font-size: 2.2em; }
+
+.works {
+  width: 100%;
+  height: 1200px;
+  font-size: 1.35em;
+  line-height: 145%; }
+  .works .explain {
+    text-indent: 165px;
+    margin-left: 15%;
+    margin-top: 90px; }
+  .works .autoSlider {
+    width: 55%;
+    margin-top: 50px;
+    display: inline-block; }
+    .works .autoSlider .companyExplain {
+      background-color: blue;
+      color: #ffc200;
+      position: absolute;
+      bottom: 80px;
+      padding-left: 30px;
+      padding-right: 30px;
+      left: 5%;
+      line-height: 145%;
+      font-size: 1.6em; }
+    .works .autoSlider img {
+      width: 100%;
+      height: 400px;
+      opacity: 0.9;
+      object-fit: cover; }
+  .works .p-explain {
+    display: inline-block;
+    margin-left: 100px;
+    position: absolute;
+    margin-top: 50px; }
+  .works #map {
+    width: 45%;
+    height: 400px;
+    margin-left: 10%;
+    display: inline-block;
+    margin-top: 30px; }
+  .works .m-explain {
+    display: inline-block;
+    margin-left: 100px;
+    position: absolute;
+    margin-top: 35px; }
+
+.footer {
+  width: 100%;
+  height: 380px;
+  padding-left: 50px;
+  background-color: #565656; }
+  .footer .f-explain {
+    width: 1024px;
+    margin: 0 auto;
+    color: #fff;
+    line-height: 145%; }
+    .footer .f-explain img {
+      padding-top: 70px;
+      margin-bottom: 50px;
+      display: inline-block; }
+    .footer .f-explain .f-logo {
+      margin-right: 10%; }
+      .footer .f-explain .f-logo a {
+        text-decoration: none;
+        margin-top: 60px;
+        position: relative;
+        margin-right: 20px;
+        bottom: 20px;
+        float: right; }
+        .footer .f-explain .f-logo a img {
+          width: 60px;
+          height: 60px;
+          object-fit: cover; }
+          .footer .f-explain .f-logo a img:hover {
+            opacity: 0.6; }
