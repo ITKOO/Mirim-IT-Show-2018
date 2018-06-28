@@ -27,7 +27,7 @@
         dbRefList.on('child_added', snap => {
             var imgRef = firebase.storage().ref('images/' + snap.val().Content.fileName);
             imgRef.getDownloadURL().then(function (url) {
-                var appendHTML = '<figure><img src="' + url + '"><figcaption><div><b>' + snap.val().Content.workName + "</b></div><br><div>" + snap.val().Content.tag + "</div><br><div>" + snap.val().Content.des + "</div><br>" + '</figcaption></figure>';
+                var appendHTML = '<figure><img src="' + url + '"><figcaption><div><b>' + snap.val().Content.workName + "</b></div><div>" + snap.val().Content.tag + "</div><div>" + snap.val().Content.des + "</div>" + '</figcaption></figure>';
                 $("#category" + snap.val().Content.category_select).append(appendHTML);
             });
         });
