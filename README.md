@@ -14,7 +14,7 @@ Description
 Tech
 ----------------------------------
 - html, css , sass, js
-- firebase hostion, realtimeDB, storage
+- firebase hosting, realtimeDB, storage
 
 Screenshots
 ---------------------------------
