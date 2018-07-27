@@ -11,6 +11,11 @@ Description
 
 - 소프트웨어과/디자인과가 만든 작품들
 
+Tech
+----------------------------------
+- html, css , sass, js
+- firebase hostion, realtimeDB, storage
+
 Screenshots
 ---------------------------------
 
