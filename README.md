@@ -1,6 +1,36 @@
 # Mirim-IT-Show-2018
 mirim IT show 2018 :)
 
+Basic - Firebase
+-------------------------------
+- firebase 패키지가 설치되어있지않다면
+~~~
+npm install -g firebase-tool
+~~~
+
+- 로그인
+~~~
+firebase login
+Allow Firebase to collect anonymous CLI usage and error reporting information? Y
+~~~
+
+- 로그아웃
+~~~
+firebase logout
+~~~
+
+- 로컬 서버 실행(localhost)
+~~~
+firebase serve
+~~~
+
+- 서버에 deploy 
+~~~
+firebase deploy
+~~~
+
+
+
 Description
 -------------------------------
 2018년도 미림여자정보과학고등학교 IT-SHOW 소개 및 작품 안내 웹사이트
