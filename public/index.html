@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>IT-SHOW-2018</title>
+    <!-- 미림 IT-Show css, style.sass 참고-->
     <link rel = "stylesheet" href="css/style.css">
+    <!-- 나눔고딕 Font -->
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <!-- slick.css(슬라이드 라이브러리) -->
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
     <style>
@@ -28,13 +31,12 @@
         .slick-next {
                 right: 40px; 
             }
-
-
          }
     </style>
 </head>
 
 <body>
+    <!-- 상단 -->
     <section class = "index">
             <section class = "index-bg">
                 <div class = "location">
@@ -50,13 +52,17 @@
 
     </section>
 
+    <!-- 이미지 슬라이드 -->
     <section class = "imageSlider">
             <div class="single-item">
                 <div><img src = "img/slide/1.jpg">
+                    <!-- 분야 -->
                     <span class = "highlight bold softExplain space">소프트웨어</span>
                     <span class = "highlight bold softExplain">계열</span>
+                    <!-- 설명 -->
                     <span class = "highlight bold mirimExplain space">미림인들에게 꼭 필요한</span>
                     <span class = "highlight bold mirimExplain">앱과 앱</span>
+                    <!-- 작품 링크 이동 -->
                     <span class = "highlight bold showExplain blink" onclick="location.href = 'sw.html';">See All Shows</span>
                 </div>
                 <div><img src = "img/slide/2.jpg">
@@ -90,6 +96,7 @@
             </div>
     </section>
 
+    <!-- 회사 소개 -->
     <section class = "works">
        <div class="explain">
           미림마이스터고 뉴미디어<br>
@@ -118,7 +125,7 @@
             </div>
       </section>
       
-
+       <!-- 전시회 일정 소개-->
        <div class = "p-explain">
            <span class="bold">6월 28일</span>&nbsp; 목&nbsp; <span class = "highlight space">13시__21시</span><br>
            <span class="bold space">29일</span>&nbsp; 금&nbsp; <span class = "highlight">&nbsp;9시______21시</span><br>
@@ -147,6 +154,7 @@
        </div>
     </section>
 
+    <!-- 푸터 -->
     <footer class = "footer">
         <div class = "f-explain"> 
             <div class = "f-logo">
@@ -168,13 +176,20 @@
     
     <!-- !!!!!!!!!!!!!!!!!! script 부분 !!!!!!!!!!!!!!!!!!!!!!!!!! -->
     
+    <!-- jquery cdn -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
+    <!-- google map -->        
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=[API_KEY]&callback=initMap"></script>
+
+    <!-- google map 상세 -->
     <script src = "js/map.js"></script>
+
+    <!-- slick -->
     <script src="js/slick.min.js"></script>
 
+    <!-- slide 관련 스크립트 -->
     <script>
         $(document).ready(function () {
     
@@ -214,9 +229,6 @@
             
         });
 
-        
-
-       
     </script>
 
 </body>
