@@ -46,7 +46,7 @@ Tech
 - html, css , sass, js
 - firebase hosting, realtimeDB, storage
 
-Tech
+Part
 ----------------------------------
 - 작품제출사이트, index.html... : @ITKOO
 - sw.html, design.html : @DEVELIOPEON
