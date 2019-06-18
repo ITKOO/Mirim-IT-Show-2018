@@ -46,6 +46,12 @@ Tech
 - html, css , sass, js
 - firebase hosting, realtimeDB, storage
 
+Tech
+----------------------------------
+- 작품제출사이트, index.html... : @ITKOO
+- sw.html, design.html : @DEVELIOPEON
+
+
 Screenshots
 ---------------------------------
 
@@ -54,3 +60,4 @@ Screenshots
 ![screencapture-show-emirim-kr-design-html-2018-07-27-11_11_51](https://user-images.githubusercontent.com/31758135/43297883-920da1f0-918e-11e8-8781-6b7f15546cb1.png)
 
 
+Written by @ITKOO
